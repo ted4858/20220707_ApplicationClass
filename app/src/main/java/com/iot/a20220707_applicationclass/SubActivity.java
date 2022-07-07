@@ -13,6 +13,8 @@ public class SubActivity extends AppCompatActivity {
         setContentView(R.layout.activity_sub);
 
         String id = ((MyApp)getApplication()).getId();
-        ((TextView)findViewById(R.id.textView)).setText(id);
+        ((TextView)findViewById(R.id.textView1)).setText(id);
+        String pw = ((MyApp)getApplication()).getPW();
+        ((TextView)findViewById(R.id.textView2)).setText(pw);
     }
 }
